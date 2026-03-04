@@ -273,7 +273,7 @@ comando: @jhonlenis ➜ ~/.config $ pwd
 /home/codespace/.config
 @jhonlenis ➜ ~/.config $ 
 
-# Leccion 4: Ejercicio 1
+# Leccion 3: Ejercicio 1
 
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
 README.md  documentos  proyecto_final
@@ -616,4 +616,320 @@ comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch proyecto/.c
 ¿Qué opción usarías para encontrar rápidamente un archivo oculto importante?
 R/ La opción ideal sería ls -la (o ls -lah para ver el tamaño).
 
-# Leccion 4
+# Leccion 4: Ejercicio 1
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch prueba.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp prueba.txt copia_prueba.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md         documentos  manual.pdf     notas.txt       prueba.txt
+apellidos         edad        mi_directorio  proyecto        script.sh
+archivo_grande    fotos       mi_practica    proyecto_final  videos
+copia_prueba.txt  info.txt    nombres        proyectos
+@jhonlenis ➜ /workspaces/practica-terminal (main) $ 
+
+# Ejercicio 2
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir carpeta1
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch carpeta1/archivo1.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp -r carpeta1 carpeta2
+
+comando: ls -R
+.:
+README.md       copia_prueba.txt  manual.pdf     proyecto        videos
+apellidos       documentos        mi_directorio  proyecto_final
+archivo_grande  edad              mi_practica    proyectos
+carpeta1        fotos             nombres        prueba.txt
+carpeta2        info.txt          notas.txt      script.sh
+
+./apellidos:
+
+./carpeta1:
+archivo1.txt
+
+./carpeta2:
+archivo1.txt
+
+./documentos:
+
+./edad:
+
+./fotos:
+
+./mi_directorio:
+archivo1.txt  subdirectorio1
+
+./mi_directorio/subdirectorio1:
+archivo2.txt  subdirectorio2
+
+./mi_directorio/subdirectorio1/subdirectorio2:
+
+./mi_practica:
+archivo1.txt  archivo2.txt  carpeta1  carpeta2
+
+./mi_practica/carpeta1:
+
+./mi_practica/carpeta2:
+
+./nombres:
+
+./proyecto:
+documentos  imagenes  temp
+
+./proyecto/documentos:
+reporte.txt
+
+./proyecto/imagenes:
+foto.jpg
+
+./proyecto/temp:
+archivo_temporal
+
+./proyecto_final:
+archivo1.txt  biblioteca     documentos   música      recursos
+archivo2.txt  codigo         fotos        proyecto    trabajo
+archivo3.txt  documentacion  mi_proyecto  prueba.txt  videos
+
+./proyecto_final/biblioteca:
+artículos  libros  revistas
+
+./proyecto_final/biblioteca/artículos:
+
+./proyecto_final/biblioteca/libros:
+novela.txt
+
+./proyecto_final/biblioteca/revistas:
+ciencia.md
+
+./proyecto_final/codigo:
+config.json  main.py
+
+./proyecto_final/documentacion:
+README.md
+
+./proyecto_final/documentos:
+
+./proyecto_final/fotos:
+
+./proyecto_final/mi_proyecto:
+codigo  documentacion  recursos
+
+./proyecto_final/mi_proyecto/codigo:
+config.json  main.py
+
+./proyecto_final/mi_proyecto/documentacion:
+README.md
+
+./proyecto_final/mi_proyecto/recursos:
+
+./proyecto_final/música:
+
+./proyecto_final/proyecto:
+src
+
+./proyecto_final/proyecto/src:
+main
+
+./proyecto_final/proyecto/src/main:
+
+./proyecto_final/recursos:
+
+./proyecto_final/trabajo:
+informe.txt  notas.md
+
+./proyecto_final/videos:
+
+./proyectos:
+
+./videos:
+@jhonlenis ➜ /workspaces/practica-terminal (main) $ 
+
+# Ejercicio 3
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp -fv carpeta1/archivo1.txt carpeta2/
+'carpeta1/archivo1.txt' -> 'carpeta2/archivo1.txt'
+
+# Laboratio 1
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo1.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo1.txt copia_archivo1.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md       copia_archivo1.txt  manual.pdf     proyecto_final
+apellidos       copia_prueba.txt    mi_directorio  proyectos
+archivo1.txt    documentos          mi_practica    prueba.txt
+archivo_grande  edad                nombres        script.sh
+carpeta1        fotos               notas.txt      videos
+carpeta2        info.txt            proyecto
+@jhonlenis ➜ /workspaces/practica-terminal (main) $ 
+
+¿Qué sucede si intentas copiar un archivo que no existe?
+R/ Si intentas copiar un archivo que no está ahí la terminal te dará un mensaje de error 
+¿Qué pasa si el archivo de destino ya existe?
+R/ El comando cp sobrescribirá el archivo de destino silenciosamente. Perderás el contenido anterior del archivo de destino y será reemplazado por el nuevo.
+
+# Laboratorio 2
+
+comando:  mkdir documentos
+mkdir: cannot create directory ‘documentos’: File exists
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo1.txt documentos/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cd documentos
+@jhonlenis ➜ /workspaces/practica-terminal/documentos (main) $ 
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal/documentos (main) $ ls
+archivo1.txt
+
+¿Qué sucede si el directorio de destino no existe?
+R/ Si intentas copiar un archivo a un directorio que no existe, el sistema mostrará un error y la copia no se realizará.
+¿Cómo puedes copiar un archivo a un directorio fuera del directorio actual?
+R/ Debes indicar la ruta del directorio destino. Puedes usar como ejemplo cp archivo.txt ../carpeta_destino/
+
+# Laboratorio 3
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal/documentos (main) $ touch archivo2.txt archivo3.txt archivo4.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo2.txt archivo3.txt archivo4.txt documentos/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls documentos/
+archivo1.txt  archivo2.txt  archivo3.txt  archivo4.txt
+
+¿Qué sucede si uno de los archivos no existe?
+R/ Si intentas copiar un archivo que no existe, el sistema mostrará un mensaje de error indicando que no se encontró el archivo, y la copia no se realizará.
+¿Cómo puedes copiar todos los archivos .txt de un directorio?
+R/ Se utiliza el comodín * para seleccionar varios archivos. Esto copia todos los archivos con extensión .txt del directorio actual al directorio destino.
+
+# Laboratorio 4
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir proyectos
+mkdir: cannot create directory ‘proyectos’: File exists
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch proyectos/archivo5.txt proyectos/archivo6.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp -r proyectos proyectos_copia
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls proyectos_copia/
+archivo5.txt  archivo6.txt
+
+¿Qué sucede si omites la opción -r al copiar un directorio?
+R/ En sistemas Linux o macOS, si intentas copiar un directorio sin usar la opción -r (recursiva), el comando cp mostrará un error y no copiará nada.
+¿Cómo puedes copiar solo ciertos archivos dentro de un directorio?
+R/ Puedes hacerlo usando comodines o especificando archivos concretos.
+Usando comodines (*)
+Especificando archivos manualmente
+Usando patrones más específicos (ejemplo)
+Copiar solo archivos .txt que tengan números:
+cp carpeta/*[0-9].txt destino/
+
+# Laboratorio 5
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo7.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo7.txt documentos/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp -f archivo7.txt documentos/
+
+¿Qué sucede si no usas la opción -f?
+R/ La opción -f (force) en el comando cp se usa para forzar la copia, sobrescribiendo archivos sin pedir confirmación y sin mostrar ciertos errores.
+¿Cómo puedes evitar que se sobrescriba un archivo existente?
+R/ Puedes usar la opción -i (interactive), que pide confirmación antes de sobrescribir
+
+# Laboratorio 6
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp -v archivo7.txt documentos/
+'archivo7.txt' -> 'documentos/archivo7.txt'
+
+¿Qué información adicional muestra la opción -v?
+R/ La opción -v significa verbose (modo detallado).
+
+Cuando la usas con cp, el comando muestra en pantalla qué archivos se están copiando y hacia dónde.
+¿Cómo puedes combinar -v con otras opciones como -f?
+R/ Puedes combinar varias opciones juntas en el mismo comando.
+Ejemplo combinando -v (detallado) y -f (forzar):
+cp -vf archivo.txt destino/
+
+# Laboratorio 7
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo8.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch -d "2022-01-01" archivo8.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp -p archivo8.txt copia_archivo8.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls -l archivo8.txt copia_archivo8.txt
+-rw-rw-rw- 1 codespace codespace 0 Jan  1  2022 archivo8.txt
+-rw-rw-rw- 1 codespace codespace 0 Jan  1  2022 copia_archivo8.txt
+
+¿Qué atributos se preservan con la opción -p?
+R/ La opción -p (preserve) en el comando cp permite conservar los atributos originales del archivo al copiarlo.
+¿Qué sucede si no usas la opción -p?
+R/ Si no usas -p:
+
+El archivo copiado puede tener permisos diferentes, según la configuración por defecto del sistema (umask).
+
+# Laboratorio 8
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo_a.txt archivo_b.txt archivo_c.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo_*.txt documentos/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls documentos/
+archivo1.txt  archivo3.txt  archivo7.txt   archivo_b.txt
+archivo2.txt  archivo4.txt  archivo_a.txt  archivo_c.txt
+
+¿Qué otros patrones puedes usar para seleccionar archivos?
+R/ * → Cualquier cantidad de caracteres, ? → Un solo carácter, [ ] → Rango o conjunto de caracteres y [! ] → Excluir caracteres
+¿Cómo puedes copiar archivos que terminen con un patrón específico?
+R/ Si quieres copiar archivos que terminen con algo específico, usas * antes del patrón.
+
+# Laboratorio 9
+
+comando:@jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir -p /tmp/simulacion_usb
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ echo "Este es un archivo del USB" > /tmp/simulacion_usb/archivo_externo.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp /tmp/simulacion_usb/archivo_externo.txt .
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md      archivo_b.txt        documentos     proyecto
+apellidos      archivo_c.txt        edad           proyecto_final
+archivo1.txt   archivo_externo.txt  fotos          proyectos
+archivo2.txt   archivo_grande       info.txt       proyectos_copia
+archivo3.txt   carpeta1             manual.pdf     prueba.txt
+archivo4.txt   carpeta2             mi_directorio  script.sh
+archivo7.txt   copia_archivo1.txt   mi_practica    videos
+archivo8.txt   copia_archivo8.txt   nombres
+archivo_a.txt  copia_prueba.txt     notas.txt
+
+¿Qué sucede si el dispositivo USB no está montado?
+R/ Si el USB no está montado, el sistema no podrá acceder a su contenido Si intentas copiar archivos hacia él, aparecerá un error como:“No existe el archivo o directorio”
+¿Cómo puedes verificar las ubicaciones de los dispositivos conectados?
+R/ lsblk, fdisk -l, mount, /media/usuario/
+/mnt/, df -h
+
+# Laboratorio 10
+
+¿Qué mensaje de error recibes cuando el archivo de origen no existe?
+R/  @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo_inexistente.txt documentos/
+cp: cannot stat 'archivo_inexistente.txt': No such file or directory
+
+¿Qué mensaje de error recibes cuando el directorio de destino no existe?
+R/ @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo1.txt directorio_inexistente/
+cp: cannot create regular file 'directorio_inexistente/': Not a directory
+
+Correcion: 
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo2.txt documentos/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir directorio_inexistente
+
+comando: stente
+@jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo1.txt directorio_inexistente/
+@jhonlenis ➜ /workspaces/practica-terminal (main) $ 
+
+# Leccion 5
+
