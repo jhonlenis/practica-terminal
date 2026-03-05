@@ -931,5 +931,481 @@ comando: stente
 @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo1.txt directorio_inexistente/
 @jhonlenis ➜ /workspaces/practica-terminal (main) $ 
 
-# Leccion 5
+# Leccion 5: Ejercicio 1
 
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv archivo.txt nuevo_nombre.txt
+
+comando: ombre.txt
+@jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            archivo_grande          mi_directorio
+apellidos            carpeta1                mi_practica
+archivo1.txt         carpeta2                nombres
+archivo2.txt         copia_archivo1.txt      notas.txt
+archivo3.txt         copia_archivo8.txt      nuevo_nombre.txt
+archivo4.txt         copia_prueba.txt        proyecto
+archivo7.txt         directorio_inexistente  proyecto_final
+archivo8.txt         documentos              proyectos
+archivo_a.txt        edad                    proyectos_copia
+archivo_b.txt        fotos                   prueba.txt
+archivo_c.txt        info.txt                script.sh
+archivo_externo.txt  manual.pdf              videos
+
+# Ejercicio 2
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir carpeta_vieja
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv carpeta_vieja carpeta_nueva
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md      archivo_c.txt           documentos        proyecto
+apellidos      archivo_externo.txt     edad              proyecto_final
+archivo1.txt   archivo_grande          fotos             proyectos
+archivo2.txt   carpeta1                info.txt          proyectos_copia
+archivo3.txt   carpeta2                manual.pdf        prueba.txt
+archivo4.txt   carpeta_nueva           mi_directorio     script.sh
+archivo7.txt   copia_archivo1.txt      mi_practica       videos
+archivo8.txt   copia_archivo8.txt      nombres
+archivo_a.txt  copia_prueba.txt        notas.txt
+archivo_b.txt  directorio_inexistente  nuevo_nombre.txt
+
+# Ejercicio 3
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir documento
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch informe.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv informe.txt documento/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls documento/
+informe.txt
+
+# Ejercicio 4
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo1.txt archivo2.txt archivo3.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv *.txt documento/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls documento/
+archivo1.txt  archivo8.txt         copia_archivo1.txt  notas.txt
+archivo2.txt  archivo_a.txt        copia_archivo8.txt  nuevo_nombre.txt
+archivo3.txt  archivo_b.txt        copia_prueba.txt    prueba.txt
+archivo4.txt  archivo_c.txt        info.txt
+archivo7.txt  archivo_externo.txt  informe.txt
+
+# Ejercicio 5
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch datos.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv datos.txt documento/backup_datos.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls documento/
+archivo1.txt  archivo8.txt         backup_datos.txt    informe.txt
+archivo2.txt  archivo_a.txt        copia_archivo1.txt  notas.txt
+archivo3.txt  archivo_b.txt        copia_archivo8.txt  nuevo_nombre.txt
+archivo4.txt  archivo_c.txt        copia_prueba.txt    prueba.txt
+archivo7.txt  archivo_externo.txt  info.txt
+
+# Ejercicio 6
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo_existente.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch documento/archiv
+o_existente.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv -i archivo_existente.txt documento/
+mv: overwrite 'documento/archivo_existente.txt'? 
+
+# Ejercicio 7
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo_viejo.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ echo "Contenido viejo" > archivo_viejo.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo_viejo.txt documento/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ echo "Contenido nuevo" > archivo_viejo.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv -u archivo_viejo.txt documento/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cat documento/archivo_
+viejo.txt
+Contenido nuevo
+
+# Desafio Final
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir -p proyectos documento
+
+comando: jhonlenis ➜ /workspaces/practica-terminal (main) $ touch proyecto/tarea1.
+txt proyecto/tarea2.txt proyecto/tarea3.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ echo "Archivos creados en la carpeta 'proyectos'."
+Archivos creados en la carpeta 'proyectos'.
+
+comandos: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv proyecto/tarea1.txt
+ documento/proyecto1.txt
+@jhonlenis ➜ /workspaces/practica-terminal (main) $ mv proyecto/tarea2.txt
+ documento/proyecto2.txt
+@jhonlenis ➜ /workspaces/practica-terminal (main) $ mv proyecto/tarea3.txt
+ documento/proyecto3.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ echo "Archivos movidos y renombrados con éxito."
+Archivos movidos y renombrados con éxito.
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ echo "--- Verificación de la carpeta 'documento' ---"
+ls documento | grep "proyecto"
+--- Verificación de la carpeta 'documento' ---
+proyecto1.txt
+proyecto2.txt
+proyecto3.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ echo "--- Verificación de la carpeta 'proyecto' (debería estar vacía) ---"
+ls proyecto
+--- Verificación de la carpeta 'proyecto' (debería estar vacía) ---
+documentos  imagenes  temp
+
+# Laboratorio 1
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch prueba.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv prueba.txt archivo_renombrado.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md               directorio_inexistente  nombres
+apellidos               documento               proyecto
+archivo_existente.txt   documentos              proyecto_final
+archivo_grande          edad                    proyectos
+archivo_renombrado.txt  fotos                   proyectos_copia
+carpeta1                manual.pdf              script.sh
+carpeta2                mi_directorio           videos
+carpeta_nueva           mi_practica
+
+# Laboratorio 2
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir temporal
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv temporal archivos_temporales
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md               carpeta_nueva           mi_practica
+apellidos               directorio_inexistente  nombres
+archivo_existente.txt   documento               proyecto
+archivo_grande          documentos              proyecto_final
+archivo_renombrado.txt  edad                    proyectos
+archivos_temporales     fotos                   proyectos_copia
+carpeta1                manual.pdf              script.sh
+carpeta2                mi_directorio           videos
+
+# Laboratorio 3
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir documentos2
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch informe.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv informe.txt documentos2/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls documentos2/
+informe.txt
+
+# Laboratorio 4
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo1.txt archivo2.txt archivo3.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir respaldos
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv *.txt respaldos/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls respaldos/
+archivo1.txt  archivo3.txt           archivo_renombrado.txt
+archivo2.txt  archivo_existente.txt
+
+# Laboratorio 5
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch datos_originales.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir backup
+
+comando: jhonlenis ➜ /workspaces/practica-terminal (main) $ mv datos_originales.txt backup/datos_backup.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls backup/
+datos_backup.txt
+
+# Laboratorio 6
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo_existente.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir documento3
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch documento3/archi
+vo_existente.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv -i archivo_existente.txt documento3/
+mv: overwrite 'documento3/archivo_existente.txt'? y
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls documento3/
+archivo_existente.txt
+
+# Laboratorio 7
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo_viejo.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ echo "Contenido viejo" > archivo_viejo.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir respaldo
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cp archivo_viejo.txt respaldo/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ echo "Contenido nuevo" > archivo_viejo.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv -u archivo_viejo.txt respaldo/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cat respaldo/archivo_viejo.txt
+Contenido nuevo
+
+# Laboratorio 8
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo_absoluto.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv archivo_absoluto.txt /tmp/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls /tmp/
+archivo_absoluto.txt
+codespaces_logs
+dockerd.log
+sshd.log
+storage_version.txt
+vscode-git-a2d2ddeea1.sock
+vscode-ipc-878f001e-4c6c-4c3c-98f8-e8c69104ffc5.sock
+vscode-ipc-dc51cefb-5fdb-447f-992f-11f2c3b8bf28.sock
+
+# Laboratorio 9
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch "mi archivo.txt"
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir destino
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mv "mi archivo.txt" destino/
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls destino/
+'mi archivo.txt'
+
+# Leccion 6: Ejercicio 1
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch prueba.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls prueba.txt
+prueba.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm prueba.txt
+
+# Ejercicio 2
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir temporal
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rmdir temporal
+
+# Ejercicio 3
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir proyecto1
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch proyecto1/archiv
+o1 proyecto1/archivo2
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls -R proyecto1
+proyecto1:
+archivo1  archivo2
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm -r proyecto1
+
+# Desafio Final
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir -p proyecto/{src,docs,tests}
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch proyecto/src/main.c proyecto/docs/manual.txt proyecto/tests/test1.py
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm -r proyect
+
+# Laboratorio 1
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivo1.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            directorio_inexistente  nombres
+apellidos            documento               proyecto_final
+archivo1.txt         documento3              proyectos
+archivo_grande       documentos              proyectos_copia
+archivos_temporales  documentos2             respaldo
+backup               edad                    respaldos
+carpeta1             fotos                   script.sh
+carpeta2             manual.pdf              videos
+carpeta_nueva        mi_directorio
+destino              mi_practica
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm archivo1.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            directorio_inexistente  mi_practica
+apellidos            documento               nombres
+archivo_grande       documento3              proyecto_final
+archivos_temporales  documentos              proyectos
+backup               documentos2             proyectos_copia
+carpeta1             edad                    respaldo
+carpeta2             fotos                   respaldos
+carpeta_nueva        manual.pdf              script.sh
+destino              mi_directorio           videos
+
+# Laboratorio 2
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch archivoA.txt archivoB.txt archivoC.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm archivoA.txt archivoB.txt archivoC.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            directorio_inexistente  mi_practica
+apellidos            documento               nombres
+archivo_grande       documento3              proyecto_final
+archivos_temporales  documentos              proyectos
+backup               documentos2             proyectos_copia
+carpeta1             edad                    respaldo
+carpeta2             fotos                   respaldos
+carpeta_nueva        manual.pdf              script.sh
+destino              mi_directorio           videos
+
+# Laboratorio 3
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch importante.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm -i importante.txt
+rm: remove regular empty file 'importante.txt'? y
+
+# Laboratorio 4
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir vacío
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rmdir vacío
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            directorio_inexistente  mi_practica
+apellidos            documento               nombres
+archivo_grande       documento3              proyecto_final
+archivos_temporales  documentos              proyectos
+backup               documentos2             proyectos_copia
+carpeta1             edad                    respaldo
+carpeta2             fotos                   respaldos
+carpeta_nueva        manual.pdf              script.sh
+destino              mi_directorio           videos
+
+# Laboratorio 4
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir vacío
+
+comando:@jhonlenis ➜ /workspaces/practica-terminal (main) $ rmdir vacío
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            directorio_inexistente  mi_practica
+apellidos            documento               nombres
+archivo_grande       documento3              proyecto_final
+archivos_temporales  documentos              proyectos
+backup               documentos2             proyectos_copia
+carpeta1             edad                    respaldo
+carpeta2             fotos                   respaldos
+carpeta_nueva        manual.pdf              script.sh
+destino              mi_directorio           videos
+
+# Laboratorio 5
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir lleno
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch lleno/archivo1.txt lleno/archivo2.txt
+
+comando:@jhonlenis ➜ /workspaces/practica-terminal (main) $ rmdir lleno
+rmdir: failed to remove 'lleno': Directory not empty
+
+# Laboratorio 6
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir proyecto
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch proyecto/main.py proyecto/config.json
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm -r proyecto
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            directorio_inexistente  mi_practica
+apellidos            documento               nombres
+archivo_grande       documento3              proyecto_final
+archivos_temporales  documentos              proyectos
+backup               documentos2             proyectos_copia
+carpeta1             edad                    respaldo
+carpeta2             fotos                   respaldos
+carpeta_nueva        manual.pdf              script.sh
+destino              mi_directorio           videos
+
+# Laboratorio 7
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir datos
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch datos/registro.txt datos/backup.log
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm -ri datos
+rm: descend into directory 'datos'? y
+rm: remove regular empty file 'datos/registro.txt'? y
+rm: remove regular empty file 'datos/backup.log'? y
+rm: remove directory 'datos'? y
+
+# Laboratorio 8
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir temp
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch temp/file1.txt temp/file2.txt
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm -rf temp
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            directorio_inexistente  mi_practica
+apellidos            documento               nombres
+archivo_grande       documento3              proyecto_final
+archivos_temporales  documentos              proyectos
+backup               documentos2             proyectos_copia
+carpeta1             edad                    respaldo
+carpeta2             fotos                   respaldos
+carpeta_nueva        manual.pdf              script.sh
+destino              mi_directorio           videos
+
+# Laboratorio 9
+
+comando: jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir -p proyecto/{src,docs,tests}
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch proyecto/src/main.c proyecto/docs/manual.txt proyecto/tests/test1.py
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm -r proyecto
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            directorio_inexistente  mi_practica
+apellidos            documento               nombres
+archivo_grande       documento3              proyecto_final
+archivos_temporales  documentos              proyectos
+backup               documentos2             proyectos_copia
+carpeta1             edad                    respaldo
+carpeta2             fotos                   respaldos
+carpeta_nueva        manual.pdf              script.sh
+destino              mi_directorio           videos
+
+# Laboratorio 10
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir -p trabajo/{informes,temporal,archivos}
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ touch trabajo/informes/reporte1.doc trabajo/temporal/notas.txt trabajo/archivos/datos.csv
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm -r trabajo/temporal
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ rm -r trabajo 
+
+comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
+README.md            carpeta_nueva           edad            proyectos
+apellidos            destino                 fotos           proyectos_copia
+archivo_grande       directorio_inexistente  manual.pdf      respaldo
+archivos_temporales  documento               mi_directorio   respaldos
+backup               documento3              mi_practica     script.sh
+carpeta1             documentos              nombres         videos
+carpeta2             documentos2             proyecto_final
