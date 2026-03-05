@@ -2,16 +2,24 @@
 
 # Leccion 1: Ejercicio Practico
 
+seCreó el directorio proyecto_final.
 Comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir proyecto_final
 
+Entraste a ese directorio.
 Comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cd proyecto_final/
 
+Creaste tres subdirectorios:
+codigo, documentacion, recursos
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ mkdir codigo documentacion recursos
 
+Creaste dos archivos dentro de codigo:
+main.py y config.json
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ touch codigo/main.py codigo/config.json
 
+Creaste el archivo README.md dentro de documentacion
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ touch documentacion/README.md
 
+Mostró la estructura completa del proyecto.
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ tree proyecto_final
 proyecto_final/
 ├── codigo
@@ -23,23 +31,30 @@ proyecto_final/
 
 # Laboratorio 1
 
+Crea un archivo vacío llamado prueba.txt en el directorio actual.
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ touch prueba.txt
 
+Muestra el contenido del directorio actual.
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ ls
 codigo  documentacion  prueba.txt  recursos
 
 # Laboratorio 2
 
+Crea tres archivos vacíos al mismo tiempo:
+archivo1.txt archivo2.txt y archivo3.txt
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ touch archivo1.txt archivo2.txt archivo3.txt
 
+Muestra todo el contenido del directorio actual.
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ ls
 archivo1.txt  archivo3.txt  documentacion  recursos
 archivo2.txt  codigo        prueba.txt
 
 # Laboratorio 3
 
+Crea el archivo prueba.txt
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ touch prueba.txt
 
+Muestra el contenido del directorio en formato detallad
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ ls -l
 total 12
 -rw-rw-rw-  1 codespace codespace    0 Feb 25 01:26 archivo1.txt
@@ -52,24 +67,31 @@ drwxrwxrwx+ 2 codespace codespace 4096 Feb 25 01:14 recursos
 
 # Laboratorio 4
 
+Crea un nuevo directorio llamado documentos dentro de proyecto_final.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ mkdir documentos
 
+Muestra el contenido del directorio actual.
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ ls
 archivo1.txt  archivo3.txt  documentacion  prueba.txt
 archivo2.txt  codigo        documentos     recursos
 
 # Laboratoria 5
 
+Crea tres directorios al mismo tiempo:
+fotos, videos y música
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ mkdir fotos videos música
 
+Muestra el contenido del directorio actual.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ ls
 archivo1.txt  archivo3.txt  documentacion  fotos   prueba.txt  videos
 archivo2.txt  codigo        documentos     música  recursos
 
 # Laboratorio 6
 
+Crea una estructura de directorios completa. La opción -p permite crear carpetas anidadas aunque no existan las anteriores.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ mkdir -p proyecto/src/main
 
+Muestra en forma de árbol la estructura del directorio proyecto.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ tree proyecto
 proyecto
 └── src
@@ -79,19 +101,29 @@ proyecto
 
 - Laboratorio 7
 
+Crea un nuevo directorio llamado trabajo.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ mkdir trabajo
 
+Crea dos archivos dentro del directorio trabajo:
+informe.txt y notas.md
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ touch trabajo/informe.txt trabajo/notas.md
 
+Muestra el contenido del directorio trabajo.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ ls trabajo
 informe.txt  notas.md
 
 # Laboratorio 8
 
+Crea la carpeta biblioteca y dentro de ella tres subcarpetas al mismo tiempo:
+libros, revistas y artículos
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ mkdir -p biblioteca/{libros,revistas,artículos}
 
+Crea dos archivos en carpetas específicas:
+novela.txt dentro de libros
+ciencia.md dentro de revistas
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ touch biblioteca/libros/novela.txt biblioteca/revistas/ciencia.md
 
+Muestra la estructura en forma de árbol.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ tree biblioteca
 biblioteca
 ├── artículos
@@ -104,16 +136,24 @@ biblioteca
 
 # Laboratorio 9
 
+Crea una nueva carpeta llamada mi_proyecto.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ mkdir mi_proyecto
 
+Entra a la carpeta mi_proyecto.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final (main) $ cd mi_proyecto
 
+Crea tres subcarpetas dentro de mi_proyecto:
+codigo, documentacion y recursos
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final/mi_proyecto (main) $ mkdir codigo documentacion recursos
 
+Crea dos archivos dentro de la carpeta codigo:
+main.py y config.json
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final/mi_proyecto (main) $ touch codigo/main.py codigo/config.json
 
+Crea el archivo README.md dentro de documentacion.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final/mi_proyecto (main) $ touch documentacion/README.md
 
+Muestra la estructura completa del proyecto en forma de árbol.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/proyecto_final/mi_proyecto (main) $ tree
 mi_proyecto/
 ├── codigo
@@ -127,20 +167,29 @@ mi_proyecto/
 
 # Leccion 2: Desafio final 
 
+Cambia al directorio absoluto /var/log (carpeta de registros del sistema).
 Comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cd /var/log
 
+Sube un nivel en la estructura.
+Estabas en /var/log, ahora pasas a /var.
 comando: @jhonlenis ➜ /var/log $ cd ..
 
+Regresa al último directorio visitado.
+Vuelve de /var a /var/log.
 comando: @jhonlenis ➜ /var $ cd -
 /var/log
 
+Va al directorio personal del usuario (home).
 comando: @jhonlenis ➜ /var/log $ cd ~
 
+Muestra la ruta actual.
+Resultado: /home/codespace
 comando: @jhonlenis ➜ ~ $ pwd
 /home/codespace
 
 # Laboratorios de Aprendizaje: Laboratorio 1
 
+Muestra la ruta completa del directorio donde estás ubicado actualmente.
 comando: @jhonlenis ➜ ~ $ pwd
 /home/codespace
 
@@ -153,8 +202,12 @@ codespace / Nombre de usuario
 
 # Laboratorio 2
 
+Cambia al directorio raíz del sistema.
 comando: @jhonlenis ➜ ~ $ cd /
 
+/ es el nivel más alto de todas las carpetas en Linux.
+pwd
+→ Muestra el directorio actual.
 comando: @jhonlenis ➜ / $ pwd
 /
 
@@ -163,73 +216,108 @@ R/ tmp/ workspaces
 
 # Laboratorio 3
 
+Cambia al directorio /home, donde se encuentran las carpetas de los usuarios.
 comando: @jhonlenis ➜ / $ cd /home
 @jhonlenis ➜ /home $ 
 
+Muestra el directorio actual.
+Resultado: /home
 comando: @jhonlenis ➜ /home $ pwd
 /home
 
 Tarea: Intenta cambiar al directorio de tu usuario (por ejemplo, /home/tu_usuario).
+
+Entra a la carpeta del usuario codespace dentro de /home.
+Después aparece el símbolo ~, que representa tu directorio personal
 R/ @jhonlenis ➜ /home $ cd codespace/
 @jhonlenis ➜ ~ $ 
 
 # Laboratorio 4
 
 Tarea: Sin usar /, cambia al directorio Documentos dentro de tu directorio personal.
+
+Cambia al directorio llamado documentos que está dentro del directorio actual.
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cd documentos
 
 # Laboratorio 5 
 
+Cambia al directorio /tmp, que es una carpeta temporal del sistema.
+Es una ruta absoluta (empieza con /).
 Comando: @jhonlenis ➜ /workspaces/practica-terminal/documentos (main) $ cd /tmp
 @jhonlenis ➜ /tmp $ 
 
+Regresa al directorio anterior en el que estabas.
 comando: @jhonlenis ➜ /tmp $ cd -
 /workspaces/practica-terminal/documentos
 @jhonlenis ➜ /workspaces/practica-terminal/documentos (main) $
 
 Tarea: Repite este proceso varias veces y observa cómo funciona cd -.
+
+Regresa al directorio anterior en el que estabas.
 R/ @jhonlenis ➜ /tmp $ cd -
 /workspaces/practica-terminal/documentos
+Regresa al directorio anterior en el que estabas.
 @jhonlenis ➜ /workspaces/practica-terminal/documentos (main) $ cd -
 /tmp
+Regresa al directorio anterior en el que estabas.
 @jhonlenis ➜ /tmp $ cd -
 /workspaces/practica-terminal/documentos
 @jhonlenis ➜ /workspaces/practica-terminal/documentos (main) $ 
 
 # Laboratorio 6
 
+Te lleva al directorio personal (home) del usuario.
+~ representa /home/codespace.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/documentos (main) $ cd ~
 @jhonlenis ➜ ~ $ 
 
 Tarea: Crea un archivo llamado prueba.txt en tu directorio personal.
+
+Muestra la ruta actual. Resultado: /home/codespace
 R/ @jhonlenis ➜ ~ $ pwd
 /home/codespace
+Crea un archivo vacío llamado prueba.txt en tu carpeta personal.
 @jhonlenis ➜ ~ $ touch prueba.txt
+Muestra el contenido del directorio actual.
 @jhonlenis ➜ ~ $ ls
 java  nvm  prueba.txt
 
 # Laboratorio 7 
 
+Sube un nivel en la estructura de carpetas.
+Pasaste de /workspaces/practica-terminal a /workspaces.
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cd ..
 @jhonlenis ➜ /workspaces $ 
 
 Tarea: Sube dos niveles consecutivos y verifica tu ubicación con pwd.
+
+ube dos niveles desde donde estabas.
+Desde /workspaces:
 R/@jhonlenis ➜ /workspaces $ cd ../..
+
+Muestra el directorio actual.
+Resultado: /
 @jhonlenis ➜ / $ pwd
 /
 @jhonlenis ➜ / $ 
 
 # Laboratorio 8
 
+Cambia al directorio /home, donde están las carpetas de los usuarios.
 comando: @jhonlenis ➜ / $ cd /home
 @jhonlenis ➜ /home $ 
 
+Entra a la carpeta del usuario codespace.
+El símbolo ~ aparece porque representa /home/codespace.
 comando: @jhonlenis ➜ /home $ cd codespace
 @jhonlenis ➜ ~ $ 
 
+Crea una nueva carpeta llamada Descargas dentro de tu directorio personal.
 comando: @jhonlenis ➜ ~ $ mkdir Descargas
 @jhonlenis ➜ ~ $ 
 
+Entra a la carpeta Descargas.
+Ahora estás en: ~/Descargas (es decir, /home/codespace/Descargas).
 comando: @jhonlenis ➜ /home $ cd codespace/Descargas
 @jhonlenis ➜ ~/Descargas $ 
 
@@ -238,20 +326,29 @@ R/ Las rutas absolutas son direcciones completas que parten desde la raíz del s
 
 # Laboratorio 9
 
+Crea una carpeta llamada pruebas dentro de tu directorio personal.
+~ representa /home/codespace.
 comando: r directory
 @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir ~/pruebas
 
+Entra directamente a la carpeta pruebas usando la ruta del home.
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cd ~/pruebas
 @jhonlenis ➜ ~/pruebas $ 
 
+Crea una subcarpeta llamada nivel1 dentro de pruebas.
 comando: @jhonlenis ➜ ~/pruebas $ mkdir nivel1
 
+Entras a la carpeta nivel1
 comando: @jhonlenis ➜ ~/pruebas $ cd nivel1
 @jhonlenis ➜ ~/pruebas/nivel1 $ 
 
 # Laboratorio 10
 
+Te lleva directamente a tu directorio personal (home).
 comando: @jhonlenis ➜ ~ $ cd /home/codespace
+
+Muestra todos los archivos, incluidos los ocultos.
+Los que empiezan con .
 @jhonlenis ➜ ~ $ ls -a
 .             .jupyter    .rvmrc
 ..            .local      .vscode-remote
@@ -266,20 +363,24 @@ comando: @jhonlenis ➜ ~ $ cd /home/codespace
 .hugo         .ruby
 @jhonlenis ➜ ~ $ 
 
+Entra a la carpeta oculta .config.
 comando: @jhonlenis ➜ ~ $ cd .config
 @jhonlenis ➜ ~/.config $ 
 
+Muestra la ruta actual.
 comando: @jhonlenis ➜ ~/.config $ pwd
 /home/codespace/.config
 @jhonlenis ➜ ~/.config $ 
 
 # Leccion 3: Ejercicio 1
 
+Muestra el contenido del directorio actual.
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls
 README.md  documentos  proyecto_final
 
 # Ejercicio 2
 
+Muestra todos los archivos y carpetas, incluidos los ocultos (los que empiezan con .
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls -a
 .   .git       documentos
 ..  README.md  proyecto_final
@@ -287,6 +388,7 @@ comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls -a
 
 # Ejercicio 3
 
+Muestra el contenido del directorio en formato detallado
 comando:  $ ls -l
 total 20
 -rw-rw-rw-   1 codespace root      9190 Feb 26 02:22 README.md
@@ -300,6 +402,7 @@ Indica que ese elemento no es un archivo de datos (como un texto o una imagen), 
 
 # Ejercicio 4
 
+Muestra el contenido del directorio con detalle, incluyendo archivos ocultos y tamaños en formato legible.
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ ls -lah
 total 32K
 drwxrwxrwx+  5 codespace root      4.0K Feb 25 02:09 .
@@ -311,15 +414,20 @@ drwxrwxrwx+ 13 codespace codespace 4.0K Feb 25 01:33 proyecto_final
 
 # Ejercicio 5
 
+Crea una carpeta llamada mi_practica.
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ mkdir mi_practica
 
+Entra a la carpeta mi_practica.
 comando: @jhonlenis ➜ /workspaces/practica-terminal (main) $ cd mi_practica
 @jhonlenis ➜ /workspaces/practica-terminal/mi_practica (main) $ 
 
+Crea dos archivos vacíos: archivo1.txt y archivo2.txt
 comando: @jhonlenis ➜ /workspaces/practica-terminal/mi_practica (main) $ touch archivo1.txt archivo2.txt
 
+Crea dos subcarpetas: carpeta1 y carpeta2
 comando: @jhonlenis ➜ /workspaces/practica-terminal/mi_practica (main) $ mkdir carpeta1 carpeta2
 
+Muestra todo con detalle, incluidos ocultos y tamaños en formato legible.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/mi_practica (main) $ ls -lah
 total 16K
 drwxrwxrwx+ 4 codespace codespace 4.0K Feb 26 02:26 .
@@ -329,6 +437,8 @@ drwxrwxrwx+ 6 codespace root      4.0K Feb 26 02:25 ..
 drwxrwxrwx+ 2 codespace codespace 4.0K Feb 26 02:26 carpeta1
 drwxrwxrwx+ 2 codespace codespace 4.0K Feb 26 02:26 carpeta2
 
+Muestra el contenido de forma recursiva (incluye subdirectorios).
+Indica que carpeta1 y carpeta2 están vacías.
 comando: @jhonlenis ➜ /workspaces/practica-terminal/mi_practica (main) $ ls -R
 .:
 archivo1.txt  archivo2.txt  carpeta1  carpeta2
